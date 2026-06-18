@@ -28,6 +28,11 @@ jobs:
       - name: Verificar autenticação
         run: aws sts get-caller-identity
 
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.15.6
+
       - name: Rodar Terraform
         run: |
           terraform init
