@@ -22,7 +22,7 @@ jobs:
       - name: Autenticar na AWS
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::SEU_ACCOUNT_ID:role/NOME_DA_ROLE
+          role-to-assume: arn:aws:iam::503577850481:role/devops-role
           aws-region: sa-east-1
 
       - name: Verificar autenticação
